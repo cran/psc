@@ -50,8 +50,10 @@ summary(surv.psc)
 #>  
 #> 100 observations selected from the data cohort for comparison 
 #> CFM of type flexsurvreg identified  
-#> linear predictor succesfully obtained with a median of  3.15 
-#> Average expected response: 9.1 
+#> linear predictor succesfully obtained with median: 
+#>  trt: 3.15
+#> Average expected response: 
+#>  trt: 9.1
 #> Average observed response: 6.366 
 #> 
 #> Counterfactual Model (CFM): 
@@ -61,15 +63,15 @@ summary(surv.psc)
 #> Formula: 
 #> Surv(time, cen) ~ vi/age60 + ecog + allmets + logafp + alb + 
 #>     logcreat + logast + aet
-#> <environment: 0x11cb8c780>
+#> <environment: 0x11a95d660>
 #> 
 #> Call:
 #>  CFM model + beta
 #> 
 #> Coefficients:
 #>       median    2.5%      97.5%     Pr(x<0)   Pr(x>0) 
-#> beta    0.3536    0.1330    0.5798    0.0052    0.9948
-#> DIC   280.9343  273.5262  293.0233        NA        NA
+#> beta    0.3574    0.1204    0.5801    0.0004    0.9996
+#> DIC   280.8601  273.6541  291.9444        NA        NA
 ```
 
 … and to see a plot of what you have done
