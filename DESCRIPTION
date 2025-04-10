@@ -1,10 +1,10 @@
 Package: psc
 Type: Package
 Title: Personalised Synthetic Controls
-Version: 1.1.0
+Version: 1.2.0
 Authors@R: c(
     person("Richard", "Jackson", email = "richJ23@liverpool.ac.uk", 
-    role = c("cre", "aut"),
+    role = c("cre", "aut","cph"),
     comment = c(ORCID = "0000-0002-7814-5088")))
 Maintainer: Richard Jackson <richJ23@liverpool.ac.uk>
 Description: Allows the comparison of data cohorts (DC) against a Counter Factual Model (CFM) and measures the difference in terms of an efficacy parameter.  Allows the application of Personalised Synthetic Controls.
@@ -17,10 +17,12 @@ BugReports: https://github.com/richJJackson/psc/issues
 Depends: R (>= 3.5.0)
 Imports: mvtnorm, survival, enrichwith, stats, flexsurv, ggplot2,
         survminer
-Suggests: knitr, rmarkdown, devtools
+Suggests: knitr, rmarkdown, devtools, testthat (>= 3.0.0)
 VignetteBuilder: knitr
+Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2024-12-12 20:55:30 UTC; richardjackson
-Author: Richard Jackson [cre, aut] (<https://orcid.org/0000-0002-7814-5088>)
+Packaged: 2025-03-31 15:01:02 UTC; richardjackson
+Author: Richard Jackson [cre, aut, cph]
+    (<https://orcid.org/0000-0002-7814-5088>)
 Repository: CRAN
-Date/Publication: 2024-12-12 21:30:02 UTC
+Date/Publication: 2025-04-10 13:40:02 UTC
